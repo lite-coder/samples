@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+          
+function openWin() {
+  window.location.href = "zcprotocol://abcd/page";
+}
+    
+function openWindowsWithDelay() {
+    openWindowsWithDelayInternal(1)
+}
+
+function openWindowsWithDelayInternal(index) {
+    
+    setTimeout(function() {
+        window.location.href = "zcprotocol://abcd/page" + index;
+        if(index < 5) {
+            openWindowsWithDelayInternal(index + 1);
+        }
+    }, 2);
+    
+}
+    
+function openWindows() {
+    for(let i=0; i < 5;i++) {
+        window.location.href = "zcprotocol://abcd/page" + index;
+    }
+}
+
+</script>
+</head>
+<body>
+
+<form>
+  <input type="button" value="Open Window" onclick="openWin()">
+  <input type="button" value="open windows(NO-Delay)" onclick="openWindows()">
+  <input type="button" value="open windows(Delay)" onclick="openWindowsWithDelay()">
+</form>
+
+</body>
+</html>
