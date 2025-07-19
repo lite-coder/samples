@@ -18,12 +18,12 @@
                             "top": {
                                 "is_enabled": true,
                                 "unit": "px",
-                                "value": 169
+                                "value": "169"
                             },
                             "left": {
                                 "is_enabled": true,
                                 "unit": "px",
-                                "value": 52
+                                "value": "52"
                             },
                             "bottom": {
                                 "is_enabled": false,
@@ -775,12 +775,12 @@
                             "top": {
                                 "is_enabled": true,
                                 "unit": "px",
-                                "value": 596
+                                "value": "596"
                             },
                             "left": {
                                 "is_enabled": true,
                                 "unit": "px",
-                                "value": 33
+                                "value": "33"
                             },
                             "bottom": {
                                 "is_enabled": false,
@@ -1539,12 +1539,12 @@
                             "top": {
                                 "is_enabled": true,
                                 "unit": "px",
-                                "value": 18
+                                "value": "18"
                             },
                             "left": {
                                 "is_enabled": true,
                                 "unit": "px",
-                                "value": 142
+                                "value": "142"
                             },
                             "bottom": {
                                 "is_enabled": false,
@@ -1738,12 +1738,12 @@
                             "top": {
                                 "is_enabled": true,
                                 "unit": "px",
-                                "value": 31
+                                "value": "31"
                             },
                             "left": {
                                 "is_enabled": true,
                                 "unit": "px",
-                                "value": 30
+                                "value": "30"
                             },
                             "bottom": {
                                 "is_enabled": false,
@@ -1950,12 +1950,12 @@
                             "top": {
                                 "is_enabled": true,
                                 "unit": "px",
-                                "value": 349
+                                "value": "349"
                             },
                             "left": {
                                 "is_enabled": true,
                                 "unit": "px",
-                                "value": 41
+                                "value": "41"
                             },
                             "bottom": {
                                 "is_enabled": false,
