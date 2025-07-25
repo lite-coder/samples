@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <style>
+    .material-icons {
+    &.outlined {
+        font-family: 'Material Icons Outlined';
+    }
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        direction: ltr;
+        -webkit-font-feature-settings: 'liga';
+        -webkit-font-smoothing: antialiased;
+        color: #b0bec5;
+        vertical-align: middle;
+    }
+    .icon-btn .material-icons {
+        font-size: 22px;
+        font-weight: 400;
+    }
+    .pane-title-bar .material-icons {
+        font-size: 22px;
+    }
+    </style>
+    <meta charset="UTF-8">
+    <title>Design Studio Tree Viewer</title>
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Inter', 'Roboto', Arial, sans-serif;
+            background: #111;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        #input-area {
+            background: none;
+            border-radius: 0;
+            box-shadow: none;
+            border: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-width: 520px;
+            max-width: 700px;
+            min-height: 520px;
+            flex: 1;
+        }
+        #input-area h2 {
+            margin-top: 36px;
+            margin-bottom: 0;
+            color: #fff;
+            font-size: 3.2rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+            width: 100vw;
+            max-width: none;
+            text-align: center;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            z-index: 10;
+        }
+        #input-area label {
+            font-size: 1.08rem;
+            color: #b0bec5;
+            font-weight: 500;
+            margin-bottom: 8px;
+            align-self: flex-start;
+        }
+        #input-area input[type="file"] {
+            display: none;
+        }
+        .file-upload {
+            display: flex;
+            align-items: center;
+            border: 1.5px solid #2a2d34;
+            background: #181a20;
+            border-radius: 14px;
+            padding: 0;
+            height: 48px;
+            width: 100%;
+            margin-bottom: 18px;
+            overflow: hidden;
+        }
+        .file-upload-label {
+            display: flex;
+            align-items: center;
+            padding: 0 18px;
+            height: 100%;
+            cursor: pointer;
+            color: #fff;
+            background: #23272e;
+            font-size: 1.08rem;
+            font-weight: 500;
+            border-right: 1.5px solid #2a2d34;
+            transition: background 0.15s;
+        }
+        .file-upload-label:hover {
+            background: #353945;
+        }
+        .file-upload-icon {
+            margin-right: 8px;
+            display: flex;
+            align-items: center;
+        }
+        .file-upload-filename {
+            flex: 1;
+            padding: 0 16px;
+            color: #fff;
+            font-size: 1.08rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        #input-area textarea {
+            margin-top: 12px;
+            border-radius: 25px;
+            border: none;
+            font-size: 1.08rem;
+            padding: 24px;
+            width: 100%;
+            min-height: 220px;
+            resize: vertical;
+            font-family: 'Menlo', 'Consolas', monospace;
+            background: #23272e;
+            color: #fff;
+            box-shadow: 0 2px 12px #0004;
+            outline: none;
+        }
+        #input-area textarea:focus {
+            outline: none;
+            box-shadow: 0 2px 12px #0004;
+        }
+        #input-area button {
+            margin-top: 22px;
+            font-size: 16px;
+            border-radius: 6px;
+            border: none;
+            background: #2563eb;
+            color: #fff;
+            padding: 13px 32px;
+            cursor: pointer;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            box-shadow: none;
+            transition: background 0.2s, color 0.2s;
+        }
+        #input-area button:hover {
+            background: #1e40af;
+            color: #fff;
+        }
+        .or {
+            margin: 12px 0;
+            color: #b0bec5;
+            font-size: 1.02rem;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="color: #f0f0f0;font-size: 48px;margin-top: 120px;">Design Studio Tree Viewer</h2>
+    <div id="input-area">
+        <div class="file-upload">
+            <label for="jsonFile" class="file-upload-label">
+                <span class="file-upload-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 16V4M12 16l-4-4m4 4l4-4" stroke="#b0bec5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="3" y="16" width="18" height="4" rx="2" fill="#b0bec5"/></svg>
+                </span>
+                Choose a file…
+            </label>
+            <input type="file" id="jsonFile" accept="application/json">
+            <span class="file-upload-filename" id="fileName">No file chosen</span>
+        </div>
+        <span class="or">or</span>
+        <textarea id="jsonInput" rows="8" cols="60" placeholder="Paste JSON here..." style="margin-bottom:0;"></textarea>
+        <button id="loadJsonBtn">Submit</button>
+    </div>
+    <div id="page2" style="display:none;flex-direction:column;height:100vh;width:100vw;position:fixed;left:0;top:0;background:#111;z-index:100;">
+        <div class="top-bar" style="display:flex;align-items:center;justify-content:space-between;height:56px;background:#181a20;border-bottom:1.5px solid #23272e;padding:0 24px;">
+            <button class="icon-btn" id="backBtn" title="Back" style="background:none;border:none;outline:none;cursor:pointer;display:flex;align-items:center;padding:6px;border-radius:6px;">
+                <span class="material-icons" style="font-size:16px;font-weight:400;">arrow_back_ios_new</span>
+            </button>
+            <div style="flex:1;"></div>
+            <button class="icon-btn" id="settingsBtn" title="Settings" style="background:none;border:none;outline:none;cursor:pointer;display:flex;align-items:center;padding:6px;border-radius:6px;">
+                <span class="material-icons outlined" style="font-size:18px;font-weight:400;">settings</span>
+            </button>
+        </div>
+        <div id="splitPane" style="display:flex;flex:1;min-height:0;height:calc(100vh - 56px);">
+            <div class="pane" id="pane1" style="background:#181a20;flex:1;min-width:120px;overflow:auto;"></div>
+            <div class="divider" id="divider" style="width:5px;background:#23272e;cursor:col-resize;"></div>
+            <div class="pane" id="pane2" style="background:#181a20;flex:1;min-width:120px;overflow:auto;"></div>
+        </div>
+    </div>
+    <script>
+    // File upload filename display
+    const fileInput = document.getElementById('jsonFile');
+    const fileNameSpan = document.getElementById('fileName');
+    fileInput.addEventListener('change', function() {
+        fileNameSpan.textContent = fileInput.files.length ? fileInput.files[0].name : 'No file chosen';
+    });
+
+    // Helper: validate JSON string
+    function isValidJson(str) {
+        try {
+            JSON.parse(str);
+            return true;
+        } catch (e) {
+            return false;
+        }
+    }
+
+    // On submit, validate JSON from file or textarea
+    document.getElementById('loadJsonBtn').onclick = function() {
+        const file = fileInput.files[0];
+        const textarea = document.getElementById('jsonInput');
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const text = e.target.result;
+                if (isValidJson(text)) {
+                    showPage2(text);
+                } else {
+                    alert('Invalid JSON in file.');
+                }
+            };
+            reader.readAsText(file);
+        } else {
+            const text = textarea.value.trim();
+            if (!text) {
+                alert('Please provide JSON data.');
+                return;
+            }
+            if (isValidJson(text)) {
+                showPage2(text);
+            } else {
+                alert('Invalid JSON in textarea.');
+            }
+        }
+    };
+
+    // Show page2 and render titles
+    function showPage2(jsonText) {
+        document.getElementById('input-area').style.display = 'none';
+        document.getElementById('page2').style.display = 'flex';
+        // Add left pane title bar
+        const pane1 = document.getElementById('pane1');
+        pane1.innerHTML = `
+            <div class="pane-title-bar" style="display:flex;align-items:center;justify-content:space-between;height:44px;background:#23272e;padding:0 16px 0 0;position:sticky;top:0;z-index:2;padding-top:0 !important;">
+                <span style="font-size:1.08rem;font-weight:500;color:#fff;padding-left:18px;">Tree View</span>
+                <span style="display:flex;gap:8px;">
+                    <button id="expandAllBtn" title="Expand All" style="background:none;border:none;cursor:pointer;padding:4px 6px;">
+                        <span class="material-icons">unfold_more</span>
+                    </button>
+                    <button id="collapseAllBtn" title="Collapse All" style="background:none;border:none;cursor:pointer;padding:4px 6px;">
+                        <span class="material-icons">unfold_less</span>
+                    </button>
+                </span>
+            </div>
+            <div class="tree-content" style="overflow:auto;max-height:calc(100vh - 56px - 44px);padding:0 0 0 0;">
+            </div>
+        `;
+        // Render tree view for DesignStudio format: start from sections, traverse elements, use type as node label
+        const treeContent = pane1.querySelector('.tree-content');
+        const treeContainer = document.createElement('div');
+        treeContainer.id = 'tree-viewer';
+        treeContainer.style.fontSize = '15px';
+        treeContainer.style.fontWeight = '400';
+        treeContainer.style.fontFamily = 'Menlo, Consolas, monospace';
+        treeContainer.style.color = '#fff';
+        treeContainer.style.marginTop = '0px';
+        treeContainer.style.paddingLeft = '0px';
+        treeContainer.style.userSelect = 'text';
+        const json = JSON.parse(jsonText);
+        let lineNum = 1;
+        // Helper to get element by id from elements map
+        function getElementById(id) {
+            return json.elements && json.elements[id];
+        }
+        // Render a node (element), recursively
+        function renderElementNode(elementId, depth, parentPath, expanded = true) {
+            const el = getElementById(elementId);
+            if (!el) return '';
+            const hasChildren = Array.isArray(el.elements) && el.elements.length > 0;
+            const nodeId = parentPath + '/' + elementId;
+            let html = '';
+            html += `<div class="tree-row" data-nodeid="${nodeId}" style="display:flex;align-items:center;min-height:25px;margin-bottom:3px;cursor:pointer;">`;
+            // Fixed left column for line number and arrow
+            html += `<span class="tree-fixedcol" style="display:flex;align-items:center;justify-content:flex-start;width:48px;min-width:48px;max-width:48px;">
+                <span class="tree-linenum" style="width:28px;display:inline-block;color:#6b7683;text-align:right;user-select:none;">${lineNum++}</span>`;
+            if (hasChildren) {
+                html += `<span class="tree-toggle material-icons" data-nodeid="${nodeId}" style="cursor:pointer;font-size:18px;vertical-align:middle;margin-left:2px;">${expanded ? 'expand_more' : 'chevron_right'}</span>`;
+            } else {
+                html += `<span style="display:inline-block;width:18px;"></span>`;
+            }
+            html += `</span>`;
+            // Node label: type (title), and elementId (faint), with vertical and L lines for tree structure
+            html += `<span class="tree-keyval" style="position:relative;display:flex;align-items:center;margin-left:${depth * 18}px;">`;
+            // Draw vertical lines for each ancestor depth (except the last, which is the node itself)
+            for (let d = 0; d < depth; d++) {
+                html += `<span class="tree-vline" style="position:absolute;left:${d * 18}px;top:0;bottom:0;width:1px;background:#2a2d34;"></span>`;
+            }
+            // Draw L-connector for this node if it has children
+            if (hasChildren) {
+                html += `<span class="tree-lconn" style="position:absolute;left:${depth * 18}px;top:12px;width:18px;height:13px;border-left:1px solid #2a2d34;border-bottom:1px solid #2a2d34;"></span>`;
+            } else if (depth > 0) {
+                // For leaf nodes, just a vertical line to the node
+                html += `<span class="tree-vline" style="position:absolute;left:${depth * 18}px;top:0;bottom:12px;width:1px;background:#2a2d34;"></span>`;
+            }
+            html += `<span style="color:#fff;position:relative;z-index:1;">${el.type || 'element'}</span>`;
+            html += `<span style="color:#6b7683;font-size:12px;margin-left:8px;position:relative;z-index:1;">${elementId}</span>`;
+            html += `</span></div>`;
+            if (expanded && hasChildren) {
+                for (const childId of el.elements) {
+                    html += renderElementNode(childId, depth + 1, nodeId);
+                }
+            }
+            return html;
+        }
+        // Start from sections array
+        function renderTreeFromSections() {
+            let html = '';
+            if (Array.isArray(json.sections)) {
+                for (const sectionId of json.sections) {
+                    html += renderElementNode(sectionId, 0, '', true);
+                }
+            }
+            return html;
+        }
+        treeContainer.innerHTML = renderTreeFromSections();
+        treeContent.appendChild(treeContainer);
+
+        // Expand/collapse all logic
+        function setAllTreeRows(expand) {
+            const rows = treeContainer.querySelectorAll('.tree-row');
+            rows.forEach((row, idx) => {
+                if (expand) {
+                    row.style.display = 'flex';
+                } else {
+                    row.style.display = idx === 0 ? 'flex' : 'none';
+                }
+                // Set toggle icon
+                const toggle = row.querySelector('.tree-toggle');
+                if (toggle) {
+                    toggle.textContent = expand ? 'expand_more' : 'chevron_right';
+                }
+            });
+        }
+
+        // Panel bar expand/collapse all
+        const expandAllBtn = pane1.querySelector('#expandAllBtn');
+        const collapseAllBtn = pane1.querySelector('#collapseAllBtn');
+        if (expandAllBtn) {
+            expandAllBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                setAllTreeRows(true);
+            });
+        }
+        if (collapseAllBtn) {
+            collapseAllBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                setAllTreeRows(false);
+            });
+        }
+
+        // Expand/collapse logic for new tree
+        treeContent.addEventListener('click', function(e) {
+            const target = e.target;
+            if (target.classList.contains('tree-toggle')) {
+                const row = target.closest('.tree-row');
+                const expanded = target.textContent === 'expand_more';
+                target.textContent = expanded ? 'chevron_right' : 'expand_more';
+                // Get depth from margin-left of .tree-keyval
+                let depth = 0;
+                if (row) {
+                    const keyval = row.querySelector('.tree-keyval');
+                    if (keyval) {
+                        const ml = keyval.style.marginLeft || '0px';
+                        depth = parseInt(ml) / 18;
+                    }
+                }
+                let next = row.nextElementSibling;
+                while (next) {
+                    let nextDepth = 0;
+                    const keyval = next.querySelector('.tree-keyval');
+                    if (keyval) {
+                        const ml = keyval.style.marginLeft || '0px';
+                        nextDepth = parseInt(ml) / 18;
+                    }
+                    if (nextDepth <= depth) break;
+                    if (expanded) {
+                        // Collapse: hide all descendants
+                        next.style.display = 'none';
+                        // Also set any toggles to collapsed state visually
+                        const toggle = next.querySelector('.tree-toggle');
+                        if (toggle && toggle.textContent === 'expand_more') {
+                            toggle.textContent = 'chevron_right';
+                        }
+                    } else {
+                        // Expand: only show direct children
+                        if (nextDepth === depth + 1) next.style.display = 'flex';
+                    }
+                    next = next.nextElementSibling;
+                }
+            }
+        });
+        // Add right pane title bar with expand/collapse all
+        const pane2 = document.getElementById('pane2');
+        pane2.innerHTML = `<div class="pane-title-bar" style="display:flex;align-items:center;justify-content:space-between;height:44px;background:#23272e;padding:0 16px 0 0;position:sticky;top:0;z-index:2;padding-top:0 !important;">
+            <span style="font-size:1.08rem;font-weight:500;color:#fff;padding-left:18px;">JSON Viewer</span>
+            <span style="display:flex;gap:8px;">
+                <button id="expandAllBtn2" title="Expand All" style="background:none;border:none;cursor:pointer;padding:4px 6px;">
+                    <span class="material-icons">unfold_more</span>
+                </button>
+                <button id="collapseAllBtn2" title="Collapse All" style="background:none;border:none;cursor:pointer;padding:4px 6px;">
+                    <span class="material-icons">unfold_less</span>
+                </button>
+            </span>
+        </div><div class="json-content" style="overflow:auto;max-height:calc(100vh - 56px - 44px);padding:0 0 0 0;font-size:15px;font-family:Menlo,Consolas,monospace;color:#fff;font-weight:400;"></div>`;
+
+        // JSON viewer logic
+        const jsonContent = pane2.querySelector('.json-content');
+        let jsonLineNum = 1;
+        // Helper: render JSON node recursively with expand/collapse and lines
+        function renderJsonNode(key, value, depth, parentPath, expanded = true) {
+            const nodeId = parentPath + '/' + (key !== null ? key : 'root');
+            let html = '';
+            const isObj = value && typeof value === 'object' && !Array.isArray(value);
+            const isArr = Array.isArray(value);
+            const hasChildren = (isObj && Object.keys(value).length > 0) || (isArr && value.length > 0);
+            html += `<div class="json-row" data-nodeid="${nodeId}" style="display:flex;align-items:center;min-height:25px;margin-bottom:3px;cursor:pointer;">`;
+            // Fixed left column for line number and arrow (like left pane)
+            html += `<span class="json-fixedcol" style="display:flex;align-items:center;justify-content:flex-start;width:48px;min-width:48px;max-width:48px;">
+                <span class="json-linenum" style="width:28px;display:inline-block;color:#6b7683;text-align:right;user-select:none;">${jsonLineNum++}</span>`;
+            if (hasChildren) {
+                html += `<span class="json-toggle material-icons" data-nodeid="${nodeId}" style="cursor:pointer;font-size:18px;vertical-align:middle;margin-left:2px;">${expanded ? 'expand_more' : 'chevron_right'}</span>`;
+            } else {
+                html += `<span style="display:inline-block;width:18px;"></span>`;
+            }
+            html += `</span>`;
+            // Node label
+            // Inline collapsed object/array with key
+            if (!expanded && (isObj || isArr)) {
+                html += `<span class=\"json-keyval\" style=\"margin-left:${depth * 18}px;\">`;
+                if (key !== null) {
+                    html += `<span style=\"color:#fff491;\">${JSON.stringify(key)}</span><span style=\"color:#fff;\">: </span>`;
+                }
+                if (isObj) {
+                    html += `<span style=\"color:#8ab4f8;\">123{...}</span>`;
+                } else {
+                    html += `<span style=\"color:#8ab4f8;\">[...]</span>`;
+                }
+                html += `</span></div>`;
+                return html;
+            }
+            html += `<span class=\"json-keyval\" style=\"margin-left:${depth * 18}px;\">`;
+            if (key !== null) {
+                html += `<span style=\"color:#fff491;\">${JSON.stringify(key)}</span><span style=\"color:#fff;\">: </span>`;
+            }
+            if (isObj) {
+                html += `<span style=\"color:#8ab4f8;\">{</span>`;
+            } else if (isArr) {
+                html += `<span style=\"color:#8ab4f8;\">[</span>`;
+            } else {
+                html += `<span style=\"color:#a1faaa;\">${JSON.stringify(value)}</span>`;
+            }
+            html += `</span></div>`;
+            // Children
+            if (expanded && hasChildren) {
+                if (isObj) {
+                    for (const k of Object.keys(value)) {
+                        html += renderJsonNode(k, value[k], depth + 1, nodeId);
+                    }
+                    // Closing brace
+                    html += `<div class=\"json-row\" style=\"display:flex;align-items:center;min-height:25px;margin-bottom:3px;\">`;
+                    html += `<span class=\"json-fixedcol\" style=\"width:48px;min-width:48px;max-width:48px;\"></span>`;
+                    html += `<span class=\"json-keyval\" style=\"margin-left:${depth * 18}px;\"><span style=\"color:#8ab4f8;\">}</span></span>`;
+                    html += `</div>`;
+                } else if (isArr) {
+                    for (let i = 0; i < value.length; i++) {
+                        html += renderJsonNode(i, value[i], depth + 1, nodeId);
+                    }
+                    // Closing bracket
+                    html += `<div class=\"json-row\" style=\"display:flex;align-items:center;min-height:25px;margin-bottom:3px;\">`;
+                    html += `<span class=\"json-fixedcol\" style=\"width:48px;min-width:48px;max-width:48px;\"></span>`;
+                    html += `<span class=\"json-keyval\" style=\"margin-left:${depth * 18}px;\"><span style=\"color:#8ab4f8;\">]</span></span>`;
+                    html += `</div>`;
+                }
+            }
+            return html;
+        }
+
+        // Expand/collapse all logic for right pane
+        function setAllJsonRows(expand) {
+            const rows = jsonContent.querySelectorAll('.json-row');
+            rows.forEach((row, idx) => {
+                if (expand) {
+                    row.style.display = 'flex';
+                } else {
+                    row.style.display = idx === 0 ? 'flex' : 'none';
+                }
+                // Set toggle icon
+                const toggle = row.querySelector('.json-toggle');
+                if (toggle) {
+                    toggle.textContent = expand ? 'expand_more' : 'chevron_right';
+                }
+            });
+        }
+
+        // Panel bar expand/collapse all for right pane
+        const expandAllBtn2 = pane2.querySelector('#expandAllBtn2');
+        const collapseAllBtn2 = pane2.querySelector('#collapseAllBtn2');
+        if (expandAllBtn2) {
+            expandAllBtn2.addEventListener('click', function(e) {
+                e.stopPropagation();
+                setAllJsonRows(true);
+            });
+        }
+        if (collapseAllBtn2) {
+            collapseAllBtn2.addEventListener('click', function(e) {
+                e.stopPropagation();
+                setAllJsonRows(false);
+            });
+        }
+
+        // Expand/collapse logic for right pane
+        jsonContent.addEventListener('click', function(e) {
+            const target = e.target;
+            if (target.classList.contains('json-toggle')) {
+                const row = target.closest('.json-row');
+                const expanded = target.textContent === 'expand_more';
+                target.textContent = expanded ? 'chevron_right' : 'expand_more';
+                // Get depth from margin-left of .json-keyval
+                let depth = 0;
+                if (row) {
+                    const keyval = row.querySelector('.json-keyval');
+                    if (keyval) {
+                        const ml = keyval.style.marginLeft || '0px';
+                        depth = parseInt(ml) / 18;
+                    }
+                }
+                let next = row.nextElementSibling;
+                while (next) {
+                    let nextDepth = 0;
+                    const keyval = next.querySelector('.json-keyval');
+                    if (keyval) {
+                        const ml = keyval.style.marginLeft || '0px';
+                        nextDepth = parseInt(ml) / 18;
+                    }
+                    if (nextDepth <= depth) break;
+                    if (expanded) {
+                        next.style.display = 'none';
+                        const toggle = next.querySelector('.json-toggle');
+                        if (toggle && toggle.textContent === 'expand_more') {
+                            toggle.textContent = 'chevron_right';
+                        }
+                    } else {
+                        if (nextDepth === depth + 1) next.style.display = 'flex';
+                    }
+                    next = next.nextElementSibling;
+                }
+            }
+        });
+
+        // On left node click, show JSON in right pane
+treeContent.addEventListener('click', function(e) {
+    // Only handle clicks on .tree-row, but ignore clicks on .tree-toggle (let expand/collapse logic above handle those)
+    const row = e.target.closest('.tree-row');
+    if (!row || e.target.classList.contains('tree-toggle')) return;
+    const nodeId = row.getAttribute('data-nodeid');
+    // Traverse path to get the correct element
+    const path = nodeId.split('/').filter(Boolean);
+    curr = json.elements[path[path.length - 1]];
+    if (!curr) return; // No element found for this path
+    let el = curr;
+    jsonLineNum = 1;
+    jsonContent.innerHTML = renderJsonNode(null, el, 0, '', true);
+});
+
+        // Show root JSON by default
+        jsonLineNum = 1;
+        jsonContent.innerHTML = renderJsonNode(null, json, 0, '', true);
+
+        // Double-click: toggle expand/collapse for both viewers
+        treeContent.addEventListener('dblclick', function(e) {
+            if (true) return; // Ignore double-clicks
+            const row = e.target.closest('.tree-row');
+            if (!row) return;
+            const nodeId = row.getAttribute('data-nodeid');
+            // Toggle tree expand/collapse
+            const toggle = row.querySelector('.tree-toggle');
+            if (toggle) {
+                toggle.click();
+            }
+            // Also toggle JSON viewer for same node
+            // Find element by nodeId path (same as click logic)
+            const path = nodeId.split('/').filter(Boolean);
+            let el = json;
+            if (path.length > 0) {
+                let curr = json;
+                if (json.elements && path[0] in json.elements) {
+                    curr = json.elements[path[0]];
+                }
+                for (let i = 1; i < path.length; i++) {
+                    if (curr.elements && curr.elements[path[i]]) {
+                        curr = curr.elements[path[i]];
+                    }
+                }
+                el = curr;
+            }
+            // Render JSON with toggled expand/collapse state
+            // To do this, keep a map of expanded/collapsed nodeIds for the right pane
+            if (!window.jsonExpandState) window.jsonExpandState = {};
+            const jsonState = window.jsonExpandState;
+            // Toggle state for this node
+            jsonState[nodeId] = !jsonState[nodeId];
+            // Helper to render with state
+            function renderJsonNodeWithState(key, value, depth, parentPath, expandedDefault = true) {
+                const nodeId2 = parentPath + '/' + (key !== null ? key : 'root');
+                let expanded = expandedDefault;
+                if (nodeId2 in jsonState) expanded = jsonState[nodeId2];
+                // Use original renderJsonNode logic, but pass expanded
+                // Copy-paste the body of renderJsonNode, but use expanded from state
+                const isObj = value && typeof value === 'object' && !Array.isArray(value);
+                const isArr = Array.isArray(value);
+                const hasChildren = (isObj && Object.keys(value).length > 0) || (isArr && value.length > 0);
+                let html = '';
+                html += `<div class="json-row" data-nodeid="${nodeId2}" style="display:flex;align-items:center;min-height:25px;margin-bottom:3px;">`;
+                html += `<span class="json-fixedcol" style="display:flex;align-items:center;justify-content:flex-start;width:48px;min-width:48px;max-width:48px;">`;
+                html += `<span class="json-linenum" style="width:28px;display:inline-block;color:#6b7683;text-align:right;user-select:none;">${jsonLineNum++}</span>`;
+                if (hasChildren) {
+                    html += `<span class="json-toggle material-icons" data-nodeid="${nodeId2}" style="cursor:pointer;font-size:18px;vertical-align:middle;margin-left:2px;">${expanded ? 'expand_more' : 'chevron_right'}</span>`;
+                } else {
+                    html += `<span style="display:inline-block;width:18px;"></span>`;
+                }
+                html += `</span>`;
+                // Inline collapsed object/array with key
+                if (!expanded && (isObj || isArr)) {
+                    html += `<span class=\"json-keyval\" style=\"margin-left:${depth * 18}px;\">`;
+                    if (key !== null) {
+                        html += `<span style=\"color:#fff491;\">${JSON.stringify(key)}</span><span style=\"color:#fff;\">: </span>`;
+                    }
+                    if (isObj) {
+                        html += `<span style=\"color:#8ab4f8;\">{ ... }</span><span style=\"color:#8ab4f8;\">}</span>`;
+                    } else {
+                        html += `<span style=\"color:#8ab4f8;\">[ ... ]</span><span style=\"color:#8ab4f8;\">]</span>`;
+                    }
+                    html += `</span></div>`;
+                    return html;
+                }
+                html += `<span class=\"json-keyval\" style=\"margin-left:${depth * 18}px;\">`;
+                if (key !== null) {
+                    html += `<span style=\"color:#fff491;\">${JSON.stringify(key)}</span><span style=\"color:#fff;\">: </span>`;
+                }
+                if (isObj) {
+                    html += `<span style=\"color:#8ab4f8;\">{</span>`;
+                } else if (isArr) {
+                    html += `<span style=\"color:#8ab4f8;\">[</span>`;
+                } else {
+                    html += `<span style=\"color:#a1faaa;\">${JSON.stringify(value)}</span>`;
+                }
+                html += `</span></div>`;
+                if (expanded && hasChildren) {
+                    if (isObj) {
+                        for (const k of Object.keys(value)) {
+                            html += renderJsonNodeWithState(k, value[k], depth + 1, nodeId2);
+                        }
+                        html += `<div class=\"json-row\" style=\"display:flex;align-items:center;min-height:25px;margin-bottom:3px;\">`;
+                        html += `<span class=\"json-fixedcol\" style=\"width:48px;min-width:48px;max-width:48px;\"></span>`;
+                        html += `<span class=\"json-keyval\" style=\"margin-left:${depth * 18}px;\"><span style=\"color:#8ab4f8;\">}</span></span>`;
+                        html += `</div>`;
+                    } else if (isArr) {
+                        for (let i = 0; i < value.length; i++) {
+                            html += renderJsonNodeWithState(i, value[i], depth + 1, nodeId2);
+                        }
+                        html += `<div class=\"json-row\" style=\"display:flex;align-items:center;min-height:25px;margin-bottom:3px;\">`;
+                        html += `<span class=\"json-fixedcol\" style=\"width:48px;min-width:48px;max-width:48px;\"></span>`;
+                        html += `<span class=\"json-keyval\" style=\"margin-left:${depth * 18}px;\"><span style=\"color:#8ab4f8;\">]</span></span>`;
+                        html += `</div>`;
+                    }
+                }
+                return html;
+            }
+            jsonLineNum = 1;
+            jsonContent.innerHTML = renderJsonNodeWithState(null, el, 0, '', true);
+        });
+
+        // Restore divider drag code
+        const divider = document.getElementById('divider');
+        const splitPane = document.getElementById('splitPane');
+        const pane1New = document.getElementById('pane1');
+        const pane2New = document.getElementById('pane2');
+        let isDragging = false;
+        let mouseMoveHandler, mouseUpHandler;
+        if (divider) {
+            divider.onmousedown = function(e) {
+                isDragging = true;
+                document.body.style.cursor = 'col-resize';
+                document.body.style.userSelect = 'none';
+                mouseMoveHandler = function(e) {
+                    if (!isDragging) return;
+                    const rect = splitPane.getBoundingClientRect();
+                    let offset = e.clientX - rect.left;
+                    const min = rect.width * 0.2;
+                    const max = rect.width * 0.8;
+                    if (offset < min) offset = min;
+                    if (offset > max) offset = max;
+                    pane1New.style.flex = 'none';
+                    pane1New.style.width = offset + 'px';
+                    pane2New.style.flex = '1';
+                };
+                mouseUpHandler = function() {
+                    isDragging = false;
+                    document.body.style.cursor = '';
+                    document.body.style.userSelect = '';
+                    document.removeEventListener('mousemove', mouseMoveHandler);
+                    document.removeEventListener('mouseup', mouseUpHandler);
+                };
+                document.addEventListener('mousemove', mouseMoveHandler);
+                document.addEventListener('mouseup', mouseUpHandler);
+            };
+        }
+    }
+
+    // Back button returns to input area
+    const backBtn = document.getElementById('backBtn');
+    if (backBtn) {
+        backBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('page2').style.display = 'none';
+            document.getElementById('input-area').style.display = 'flex';
+        });
+    }
+
+    // Drag to resize panes
+    let isDragging = false;
+    const divider = document.getElementById('divider');
+    const splitPane = document.getElementById('splitPane');
+    const pane1 = document.getElementById('pane1');
+    const pane2 = document.getElementById('pane2');
+    if (divider) {
+        divider.addEventListener('mousedown', function(e) {
+            isDragging = true;
+            document.body.style.cursor = 'col-resize';
+        });
+        document.addEventListener('mousemove', function(e) {
+            if (!isDragging) return;
+            const rect = splitPane.getBoundingClientRect();
+            let offset = e.clientX - rect.left;
+            const min = 120;
+            if (offset < min) offset = min;
+            pane1.style.flex = 'none';
+            pane1.style.width = offset + 'px';
+            pane2.style.flex = '1';
+        });
+        document.addEventListener('mouseup', function() {
+            if (isDragging) {
+                isDragging = false;
+                document.body.style.cursor = '';
+            }
+        });
+    }
+    </script>
+</body>
+</html>
