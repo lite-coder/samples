@@ -1,11 +1,11 @@
 {
   "elements": {
-    "elm_Vm-9lDlXSgKC25h2axk4QA": {
-      "elementId": "elm_Vm-9lDlXSgKC25h2axk4QA",
+    "elm_856-ohrPQz-yV3-PXySjLw": {
+      "elementId": "elm_856-ohrPQz-yV3-PXySjLw",
       "elements": [
-        "elm_jUjRK98uRbyi5N8ZBFAT7A",
-        "elm_sgBv7DS8Q4CYkD8nVJQVgw",
-        "elm_QIeNHIOCQ3aJgblh6wWXyw"
+        "elm_12CLu4B6THmoAyKaeB1X1w",
+        "elm_ADkytwJzSoKlkAqaHDqYqQ",
+        "elm_toPqz8HURQyGfjU2T0NDOQ"
       ],
       "type": "horizontal_flex",
       "element": {
@@ -211,12 +211,12 @@
         }
       }
     },
-    "elm_dCTBVD0dTmq0i6XsU7-J1A": {
-      "elementId": "elm_dCTBVD0dTmq0i6XsU7-J1A",
+    "elm_hpvk6TxiQlS-yu1btu0lYg": {
+      "elementId": "elm_hpvk6TxiQlS-yu1btu0lYg",
       "elements": [
-        "elm_KHBnEQEmRbSLTlv-xwHoqQ",
-        "elm_b9eLUEByT5ebOXCytrVhZw",
-        "elm_ybjgntgySZ2EmeQ4kmQGsw"
+        "elm_Kvi2SxUTTMiGHMwTRzJVdg",
+        "elm_buhmoO1aRDeO6VTv9dNShw",
+        "elm_qZEdjpCRQsWuFczo2lQFGg"
       ],
       "type": "vertical_flex",
       "element": {
@@ -412,11 +412,11 @@
         }
       }
     },
-    "elm_mK2dlhx3S8WxQcgaS2H6qg": {
-      "elementId": "elm_mK2dlhx3S8WxQcgaS2H6qg",
+    "elm_NRMmZrBBQm-497af1E58-A": {
+      "elementId": "elm_NRMmZrBBQm-497af1E58-A",
       "elements": [
-        "elm_HBUHrzJCTCuExFCP6-8m6A",
-        "elm_uwaBBtd3RSCuTOydmCI85g"
+        "elm_tHcz78eBR26VZrL_Uw9CUw",
+        "elm_X8FBMYucR-KC87p3ypEvkQ"
       ],
       "type": "vertical_flex",
       "element": {
@@ -606,18 +606,18 @@
         }
       }
     },
-    "elm_sgBv7DS8Q4CYkD8nVJQVgw": {
-      "elementId": "elm_sgBv7DS8Q4CYkD8nVJQVgw",
+    "elm_ADkytwJzSoKlkAqaHDqYqQ": {
+      "elementId": "elm_ADkytwJzSoKlkAqaHDqYqQ",
       "elements": [
-        "elm_fPJ6RNfvTi-vJotEZhlGcw",
-        "elm_vFIKlhvRRNKP7cbqpHGthg"
+        "elm_KA0xBcDHT42Vz-KjilVA_w",
+        "elm_3zvwzUZ8SoCIchjyaz5GbQ"
       ],
       "type": "vertical_flex",
       "element": {
         "layout": {
           "width": {
             "unit": "px",
-            "value": "300"
+            "value": "330"
           },
           "constraints": {
             "top": {
@@ -790,12 +790,12 @@
         }
       }
     },
-    "elm_M85i7VPXTkabSIVbdUxmVg": {
-      "elementId": "elm_M85i7VPXTkabSIVbdUxmVg",
+    "elm_Uig9eOyBS1G9XX3_Z27XYA": {
+      "elementId": "elm_Uig9eOyBS1G9XX3_Z27XYA",
       "elements": [
-        "elm_fIKaf_xFSrK_Upazl5jbJA",
-        "elm_C_JQbhCkTZ-Vv2Jnrh4ceQ",
-        "elm_Vm-9lDlXSgKC25h2axk4QA"
+        "elm_Y8b-BcjMTb6dLXllfwfAnA",
+        "elm_pULdh6mpRbC8oxjmX9afOA",
+        "elm_856-ohrPQz-yV3-PXySjLw"
       ],
       "type": "vertical_flex",
       "element": {
@@ -985,11 +985,11 @@
         }
       }
     },
-    "elm_eExARwXzR1qKg4qUBmWVjQ": {
-      "elementId": "elm_eExARwXzR1qKg4qUBmWVjQ",
+    "elm_0JhwYMwFSCiUO-T34HwJDA": {
+      "elementId": "elm_0JhwYMwFSCiUO-T34HwJDA",
       "elements": [
-        "elm_mK2dlhx3S8WxQcgaS2H6qg",
-        "elm_dCTBVD0dTmq0i6XsU7-J1A"
+        "elm_NRMmZrBBQm-497af1E58-A",
+        "elm_hpvk6TxiQlS-yu1btu0lYg"
       ],
       "type": "horizontal_flex",
       "element": {
@@ -1194,8 +1194,8 @@
         }
       }
     },
-    "elm_b9eLUEByT5ebOXCytrVhZw": {
-      "elementId": "elm_b9eLUEByT5ebOXCytrVhZw",
+    "elm_buhmoO1aRDeO6VTv9dNShw": {
+      "elementId": "elm_buhmoO1aRDeO6VTv9dNShw",
       "elements": [],
       "type": "xycoordinates",
       "element": {
@@ -1360,11 +1360,11 @@
         }
       }
     },
-    "elm_ybjgntgySZ2EmeQ4kmQGsw": {
-      "elementId": "elm_ybjgntgySZ2EmeQ4kmQGsw",
+    "elm_qZEdjpCRQsWuFczo2lQFGg": {
+      "elementId": "elm_qZEdjpCRQsWuFczo2lQFGg",
       "elements": [
-        "elm_on_FoseXQQ2o5lhpUzwoMg",
-        "elm_yw8aqU_OSFOJkWa7czYygg"
+        "elm_82uCc8oXS6O7f4jWtuKbWQ",
+        "elm_qiVDIptwR2KxdKrxwhAf4Q"
       ],
       "type": "horizontal_flex",
       "element": {
@@ -1544,8 +1544,8 @@
         }
       }
     },
-    "elm_fPJ6RNfvTi-vJotEZhlGcw": {
-      "elementId": "elm_fPJ6RNfvTi-vJotEZhlGcw",
+    "elm_KA0xBcDHT42Vz-KjilVA_w": {
+      "elementId": "elm_KA0xBcDHT42Vz-KjilVA_w",
       "type": "heading",
       "element": {
         "layout": {
@@ -1768,19 +1768,19 @@
         "content": "\n Partner with us for exclusive offers tailored for our franchise vendors to an innovative strategies"
       }
     },
-    "elm_QIeNHIOCQ3aJgblh6wWXyw": {
-      "elementId": "elm_QIeNHIOCQ3aJgblh6wWXyw",
+    "elm_toPqz8HURQyGfjU2T0NDOQ": {
+      "elementId": "elm_toPqz8HURQyGfjU2T0NDOQ",
       "elements": [
-        "elm_lj6ogadjSHasxycSID9iEA",
-        "elm_8S2iYN2ATlef29bunJiUvA",
-        "elm_n5SlQbwITQO7z2y0Rfwn-w"
+        "elm_D8TAMvWvQDuSwT6pcirppg",
+        "elm_yVplIKqYREyRu9LWVXX3DQ",
+        "elm_McRQDNWWQp6_Bfr6QznjAQ"
       ],
       "type": "vertical_flex",
       "element": {
         "layout": {
           "width": {
             "unit": "px",
-            "value": "300"
+            "value": "330"
           },
           "constraints": {
             "top": {
@@ -1966,8 +1966,8 @@
         }
       }
     },
-    "elm__CZ5dAugSl6Gh0Iqb0lJ9A": {
-      "elementId": "elm__CZ5dAugSl6Gh0Iqb0lJ9A",
+    "elm_YM7AbFz2Rie32AI0R-Om_w": {
+      "elementId": "elm_YM7AbFz2Rie32AI0R-Om_w",
       "type": "image",
       "element": {
         "layout": {
@@ -2133,11 +2133,9 @@
         }
       }
     },
-    "elm_5E_bYxLOTIyIyg6h2vk7Tw": {
-      "elementId": "elm_5E_bYxLOTIyIyg6h2vk7Tw",
-      "elements": [
-        "elm_J2d17SK_Q8ixU11KzD-AjQ"
-      ],
+    "elm_nIR-ooNPQYyyLurU59yoJA": {
+      "elementId": "elm_nIR-ooNPQYyyLurU59yoJA",
+      "elements": [],
       "type": "menu_item",
       "element": {
         "layout": {
@@ -2173,8 +2171,9 @@
           }
         },
         "data": {
-          "component_id": 14000000005073,
+          "component_id": 135094000000046030,
           "link_url": "cp/aboutus",
+          "display_name": "About Us",
           "element_name": "menu_item_2"
         },
         "style": {
@@ -2225,6 +2224,9 @@
             },
             "flex": {
               "direction": ""
+            },
+            "font": {
+              "color": "#fff"
             }
           },
           "is_active": false,
@@ -2282,14 +2284,25 @@
             },
             "flex": {
               "direction": ""
+            },
+            "font": {
+              "color": "#fff"
             }
           },
-          "opacity": "100"
+          "opacity": "100",
+          "font": {
+            "color": "#576072",
+            "size": {
+              "value": "14"
+            },
+            "weight": "300",
+            "family": "'Roboto',sans-serif"
+          }
         }
       }
     },
-    "elm_HBUHrzJCTCuExFCP6-8m6A": {
-      "elementId": "elm_HBUHrzJCTCuExFCP6-8m6A",
+    "elm_tHcz78eBR26VZrL_Uw9CUw": {
+      "elementId": "elm_tHcz78eBR26VZrL_Uw9CUw",
       "type": "heading",
       "element": {
         "layout": {
@@ -2496,169 +2509,9 @@
         "content": "\n        Become A Vendor With Us And Discover Amazing Opportunities For Your Business Growth!"
       }
     },
-    "elm_bSJ3DISpSBuvw1fGi-o8Bg": {
-      "elementId": "elm_bSJ3DISpSBuvw1fGi-o8Bg",
-      "type": "heading",
-      "element": {
-        "layout": {
-          "width": {
-            "unit": "auto",
-            "value": ""
-          },
-          "constraints": {
-            "top": {
-              "is_enabled": false,
-              "unit": "px",
-              "value": ""
-            },
-            "left": {
-              "is_enabled": false,
-              "unit": "px",
-              "value": ""
-            },
-            "bottom": {
-              "is_enabled": false,
-              "unit": "px",
-              "value": ""
-            },
-            "right": {
-              "is_enabled": false,
-              "unit": "px",
-              "value": ""
-            },
-            "position": ""
-          },
-          "height": {
-            "unit": "auto",
-            "value": ""
-          }
-        },
-        "data": {
-          "component_id": 14000000005049,
-          "text": "${{ item }}",
-          "placeholder": "${{ item }}",
-          "element_name": "heading_3"
-        },
-        "style": {
-          "corner_radius": {
-            "preset": "",
-            "value": ""
-          },
-          "border": {
-            "color": "",
-            "thickness": "1"
-          },
-          "padding": {
-            "unit": "px",
-            "is_even": true,
-            "value": ""
-          },
-          "hover": {
-            "border": {
-              "thickness": ""
-            },
-            "padding": {
-              "top": {
-                "unit": "",
-                "value": ""
-              },
-              "left": {
-                "unit": "",
-                "value": ""
-              },
-              "bottom": {
-                "unit": "",
-                "value": ""
-              },
-              "is_even": "",
-              "right": {
-                "unit": "",
-                "value": ""
-              }
-            },
-            "shadow": {
-              "preset": ""
-            },
-            "background": {
-              "image": {
-                "builder_src": ""
-              }
-            },
-            "font": {
-              "color": "#fff"
-            }
-          },
-          "is_active": true,
-          "shadow": {
-            "color": "",
-            "blur": "",
-            "scale": "",
-            "preset": "",
-            "y_offset": "",
-            "x_offset": ""
-          },
-          "background": {
-            "image": {
-              "builder_src": ""
-            },
-            "color": ""
-          },
-          "active": {
-            "border": {
-              "thickness": ""
-            },
-            "padding": {
-              "top": {
-                "unit": "",
-                "value": ""
-              },
-              "left": {
-                "unit": "",
-                "value": ""
-              },
-              "bottom": {
-                "unit": "",
-                "value": ""
-              },
-              "is_even": "",
-              "right": {
-                "unit": "",
-                "value": ""
-              }
-            },
-            "shadow": {
-              "preset": ""
-            },
-            "background": {
-              "image": {
-                "builder_src": ""
-              }
-            },
-            "font": {
-              "color": "#fff"
-            }
-          },
-          "align": {
-            "horizontal": "left"
-          },
-          "opacity": "100",
-          "font": {
-            "color": "#576072",
-            "size": {
-              "value": "14"
-            },
-            "weight": "300",
-            "family": "'Roboto',sans-serif"
-          }
-        },
-        "content": "Home"
-      }
-    },
-    "elm_KpqELk5gQAmFxCmmCJcVVQ": {
-      "elementId": "elm_KpqELk5gQAmFxCmmCJcVVQ",
-      "elements": [
-        "elm_kVyZ5TDARkibxjqEEr_v9Q"
-      ],
+    "elm_scCFK4M0TIKB6E-Gotpibg": {
+      "elementId": "elm_scCFK4M0TIKB6E-Gotpibg",
+      "elements": [],
       "type": "menu_item",
       "element": {
         "layout": {
@@ -2694,8 +2547,9 @@
           }
         },
         "data": {
-          "component_id": 14000000005061,
+          "component_id": 135094000000046030,
           "link_url": "signup",
+          "display_name": "Sign up",
           "element_name": "menu_item_2"
         },
         "style": {
@@ -2761,6 +2615,9 @@
             },
             "flex": {
               "direction": ""
+            },
+            "font": {
+              "color": "#fff"
             }
           },
           "is_active": false,
@@ -2817,14 +2674,25 @@
             },
             "flex": {
               "direction": ""
+            },
+            "font": {
+              "color": "#fff"
             }
           },
-          "opacity": "100"
+          "opacity": "100",
+          "font": {
+            "color": "#7A8398",
+            "size": {
+              "value": "16"
+            },
+            "weight": "400",
+            "family": "'Roboto',sans-serif"
+          }
         }
       }
     },
-    "elm_uwaBBtd3RSCuTOydmCI85g": {
-      "elementId": "elm_uwaBBtd3RSCuTOydmCI85g",
+    "elm_X8FBMYucR-KC87p3ypEvkQ": {
+      "elementId": "elm_X8FBMYucR-KC87p3ypEvkQ",
       "type": "heading",
       "element": {
         "layout": {
@@ -3022,8 +2890,8 @@
         "content": "\n Connect to us as a vendor and discover a realm of exciting possibilities that will elevate your growth and propel your business to extraordinary levels!"
       }
     },
-    "elm_KHBnEQEmRbSLTlv-xwHoqQ": {
-      "elementId": "elm_KHBnEQEmRbSLTlv-xwHoqQ",
+    "elm_Kvi2SxUTTMiGHMwTRzJVdg": {
+      "elementId": "elm_Kvi2SxUTTMiGHMwTRzJVdg",
       "type": "heading",
       "element": {
         "layout": {
@@ -3221,8 +3089,8 @@
         "content": "\n        More than 125 vendors partnered with us on our this venture. Daily perks adds to their profile everyday"
       }
     },
-    "elm_yw8aqU_OSFOJkWa7czYygg": {
-      "elementId": "elm_yw8aqU_OSFOJkWa7czYygg",
+    "elm_qiVDIptwR2KxdKrxwhAf4Q": {
+      "elementId": "elm_qiVDIptwR2KxdKrxwhAf4Q",
       "type": "heading",
       "element": {
         "layout": {
@@ -3420,8 +3288,8 @@
         "content": "  125+"
       }
     },
-    "elm_8S2iYN2ATlef29bunJiUvA": {
-      "elementId": "elm_8S2iYN2ATlef29bunJiUvA",
+    "elm_yVplIKqYREyRu9LWVXX3DQ": {
+      "elementId": "elm_yVplIKqYREyRu9LWVXX3DQ",
       "type": "heading",
       "element": {
         "layout": {
@@ -3619,11 +3487,11 @@
         "content": "\n        \n Explore a variety of exclusive discounts and perks joining our franchise."
       }
     },
-    "elm_LKoOvVPbQ3en2-XP5l-obQ": {
-      "elementId": "elm_LKoOvVPbQ3en2-XP5l-obQ",
+    "elm_sMK9AomZSu6_usVueZDlXg": {
+      "elementId": "elm_sMK9AomZSu6_usVueZDlXg",
       "elements": [
-        "elm_J65wQsGnSLmGebjFchOJjA",
-        "elm_5E_bYxLOTIyIyg6h2vk7Tw"
+        "elm_5guCRhiTSQOJsG8O4HPrXQ",
+        "elm_nIR-ooNPQYyyLurU59yoJA"
       ],
       "type": "menu",
       "element": {
@@ -3663,10 +3531,10 @@
           "reordered_list": [],
           "mapped_component": "portalpages",
           "excluded_list": [
-            "14000000005079",
-            "14000000005055",
-            "14000000005067",
-            "14000000005061"
+            "135094000000046033",
+            "135094000000046045",
+            "135094000000046021",
+            "135094000000046027"
           ],
           "element_name": "menu_2"
         },
@@ -3778,8 +3646,8 @@
         }
       }
     },
-    "elm_6vXGSRigQXCdKnEPPxnzzg": {
-      "elementId": "elm_6vXGSRigQXCdKnEPPxnzzg",
+    "elm_5b1j_v0KSRWLBUyzrRyrcQ": {
+      "elementId": "elm_5b1j_v0KSRWLBUyzrRyrcQ",
       "type": "image",
       "element": {
         "layout": {
@@ -3945,8 +3813,8 @@
         }
       }
     },
-    "elm_e7S5Kc54THWG7sp2rAFPpg": {
-      "elementId": "elm_e7S5Kc54THWG7sp2rAFPpg",
+    "elm_3V7OsCCLTKS7GLa8o9lkoA": {
+      "elementId": "elm_3V7OsCCLTKS7GLa8o9lkoA",
       "type": "image",
       "element": {
         "layout": {
@@ -4036,8 +3904,8 @@
         }
       }
     },
-    "elm_dxfvhL0jS16mIcn3GHdj3g": {
-      "elementId": "elm_dxfvhL0jS16mIcn3GHdj3g",
+    "elm_IsqCVrGPQ1GoO26PMAC1kg": {
+      "elementId": "elm_IsqCVrGPQ1GoO26PMAC1kg",
       "type": "heading",
       "element": {
         "layout": {
@@ -4199,11 +4067,9 @@
         "content": "\n        Zylker"
       }
     },
-    "elm_OJe3jwrYSwyQQe8k1MuF-g": {
-      "elementId": "elm_OJe3jwrYSwyQQe8k1MuF-g",
-      "elements": [
-        "elm_YuYOVGEDTOW1zry3IJ5vEg"
-      ],
+    "elm_bUOpkP_vSJ25hCNuXlmAmQ": {
+      "elementId": "elm_bUOpkP_vSJ25hCNuXlmAmQ",
+      "elements": [],
       "type": "menu_item",
       "element": {
         "layout": {
@@ -4239,8 +4105,9 @@
           }
         },
         "data": {
-          "component_id": 14000000005055,
+          "component_id": 135094000000046020,
           "link_url": "login",
+          "display_name": "Login /",
           "element_name": "menu_item_2"
         },
         "style": {
@@ -4290,6 +4157,9 @@
             },
             "flex": {
               "direction": ""
+            },
+            "font": {
+              "color": "#fff"
             }
           },
           "is_active": false,
@@ -4346,14 +4216,25 @@
             },
             "flex": {
               "direction": ""
+            },
+            "font": {
+              "color": "#fff"
             }
           },
-          "opacity": "100"
+          "opacity": "100",
+          "font": {
+            "color": "#7A8398",
+            "size": {
+              "value": "16"
+            },
+            "weight": "400",
+            "family": "'Roboto',sans-serif"
+          }
         }
       }
     },
-    "elm_b13ktId_Qm-a4LxrWMbxrg": {
-      "elementId": "elm_b13ktId_Qm-a4LxrWMbxrg",
+    "elm_JE5aL3rqTDiMwvOFchzx_A": {
+      "elementId": "elm_JE5aL3rqTDiMwvOFchzx_A",
       "type": "heading",
       "element": {
         "layout": {
@@ -4551,166 +4432,8 @@
         "content": "\n        \n Collaborate closely with certified vendor to establish tailored licensing and certification processes for our franchise."
       }
     },
-    "elm_YuYOVGEDTOW1zry3IJ5vEg": {
-      "elementId": "elm_YuYOVGEDTOW1zry3IJ5vEg",
-      "type": "heading",
-      "element": {
-        "layout": {
-          "width": {
-            "unit": "auto",
-            "value": null
-          },
-          "constraints": {
-            "top": {
-              "is_enabled": false,
-              "unit": "px",
-              "value": ""
-            },
-            "left": {
-              "is_enabled": false,
-              "unit": "px",
-              "value": ""
-            },
-            "bottom": {
-              "is_enabled": false,
-              "unit": "px",
-              "value": ""
-            },
-            "right": {
-              "is_enabled": false,
-              "unit": "px",
-              "value": ""
-            },
-            "position": ""
-          },
-          "height": {
-            "unit": "auto",
-            "value": null
-          }
-        },
-        "data": {
-          "component_id": 14000000005055,
-          "text": "${{ item }}",
-          "placeholder": "Login /",
-          "element_name": "heading_3"
-        },
-        "style": {
-          "corner_radius": {
-            "preset": "",
-            "value": ""
-          },
-          "border": {
-            "color": "",
-            "thickness": "1"
-          },
-          "padding": {
-            "unit": "px",
-            "is_even": true,
-            "value": ""
-          },
-          "hover": {
-            "border": {
-              "thickness": ""
-            },
-            "padding": {
-              "top": {
-                "unit": "",
-                "value": ""
-              },
-              "left": {
-                "unit": "",
-                "value": ""
-              },
-              "bottom": {
-                "unit": "",
-                "value": ""
-              },
-              "is_even": "",
-              "right": {
-                "unit": "",
-                "value": ""
-              }
-            },
-            "shadow": {
-              "preset": ""
-            },
-            "background": {
-              "image": {
-                "builder_src": ""
-              }
-            },
-            "font": {
-              "color": "#8C74CA"
-            }
-          },
-          "is_active": true,
-          "shadow": {
-            "color": "",
-            "blur": "",
-            "scale": "",
-            "preset": "",
-            "y_offset": "",
-            "x_offset": ""
-          },
-          "background": {
-            "image": {
-              "builder_src": ""
-            },
-            "color": ""
-          },
-          "active": {
-            "border": {
-              "thickness": ""
-            },
-            "padding": {
-              "top": {
-                "unit": "",
-                "value": ""
-              },
-              "left": {
-                "unit": "",
-                "value": ""
-              },
-              "bottom": {
-                "unit": "",
-                "value": ""
-              },
-              "is_even": "",
-              "right": {
-                "unit": "",
-                "value": ""
-              }
-            },
-            "shadow": {
-              "preset": ""
-            },
-            "background": {
-              "image": {
-                "builder_src": ""
-              }
-            },
-            "font": {
-              "color": "#8C74CA"
-            }
-          },
-          "align": {
-            "horizontal": "left"
-          },
-          "opacity": "100",
-          "font": {
-            "color": "#7A8398",
-            "size": {
-              "value": "16"
-            },
-            "weight": "400",
-            "family": "'Roboto',sans-serif"
-          }
-        },
-        "content": "Login /"
-      }
-    },
-    "elm_Y9yK8RrKR_CGIDC6_quKRA": {
-      "elementId": "elm_Y9yK8RrKR_CGIDC6_quKRA",
+    "elm_ighP-PCBRHuPZjYuyiRoRQ": {
+      "elementId": "elm_ighP-PCBRHuPZjYuyiRoRQ",
       "type": "heading",
       "element": {
         "layout": {
@@ -4932,8 +4655,8 @@
         "content": "\n        Get Started"
       }
     },
-    "elm_n5SlQbwITQO7z2y0Rfwn-w": {
-      "elementId": "elm_n5SlQbwITQO7z2y0Rfwn-w",
+    "elm_McRQDNWWQp6_Bfr6QznjAQ": {
+      "elementId": "elm_McRQDNWWQp6_Bfr6QznjAQ",
       "type": "heading",
       "element": {
         "layout": {
@@ -5155,11 +4878,11 @@
         "content": "\n        Get Started"
       }
     },
-    "elm_PbKMeR_FSgCQmVxpncaN3w": {
-      "elementId": "elm_PbKMeR_FSgCQmVxpncaN3w",
+    "elm_fhchy1BTRgSpheDBfB8WYA": {
+      "elementId": "elm_fhchy1BTRgSpheDBfB8WYA",
       "elements": [
-        "elm_e7S5Kc54THWG7sp2rAFPpg",
-        "elm_dxfvhL0jS16mIcn3GHdj3g"
+        "elm_3V7OsCCLTKS7GLa8o9lkoA",
+        "elm_IsqCVrGPQ1GoO26PMAC1kg"
       ],
       "type": "horizontal_flex",
       "element": {
@@ -5322,8 +5045,8 @@
         }
       }
     },
-    "elm_2FDvmv6sTR-yat2NWHeKJw": {
-      "elementId": "elm_2FDvmv6sTR-yat2NWHeKJw",
+    "elm_6xtoHVgMRoGV9kBtuv8lUw": {
+      "elementId": "elm_6xtoHVgMRoGV9kBtuv8lUw",
       "type": "image",
       "element": {
         "layout": {
@@ -5489,8 +5212,8 @@
         }
       }
     },
-    "elm_0o055cmSRGu7DeIWqs3iGg": {
-      "elementId": "elm_0o055cmSRGu7DeIWqs3iGg",
+    "elm_-M_pzIvEThG6Yp6hlb5eXA": {
+      "elementId": "elm_-M_pzIvEThG6Yp6hlb5eXA",
       "type": "heading",
       "element": {
         "layout": {
@@ -5688,10 +5411,10 @@
         "content": "\n        Enjoy More Perks!"
       }
     },
-    "elm_0SOMUCt-QQqIM2sh0QWmUQ": {
-      "elementId": "elm_0SOMUCt-QQqIM2sh0QWmUQ",
+    "elm_yHLHdE_dRzyysI_hldFfug": {
+      "elementId": "elm_yHLHdE_dRzyysI_hldFfug",
       "elements": [
-        "elm_M85i7VPXTkabSIVbdUxmVg"
+        "elm_Uig9eOyBS1G9XX3_Z27XYA"
       ],
       "type": "canvas",
       "element": {
@@ -5707,11 +5430,11 @@
         }
       }
     },
-    "elm_vFIKlhvRRNKP7cbqpHGthg": {
-      "elementId": "elm_vFIKlhvRRNKP7cbqpHGthg",
+    "elm_3zvwzUZ8SoCIchjyaz5GbQ": {
+      "elementId": "elm_3zvwzUZ8SoCIchjyaz5GbQ",
       "elements": [
-        "elm_Cxr_labcQ0mKCgmQLv3Itw",
-        "elm_b13ktId_Qm-a4LxrWMbxrg"
+        "elm_My-BX28ZSJC-QxrWEl4S0A",
+        "elm_JE5aL3rqTDiMwvOFchzx_A"
       ],
       "type": "vertical_flex",
       "element": {
@@ -5904,10 +5627,10 @@
         }
       }
     },
-    "elm_fIKaf_xFSrK_Upazl5jbJA": {
-      "elementId": "elm_fIKaf_xFSrK_Upazl5jbJA",
+    "elm_Y8b-BcjMTb6dLXllfwfAnA": {
+      "elementId": "elm_Y8b-BcjMTb6dLXllfwfAnA",
       "elements": [
-        "elm_yCHsQeiDSkiO_zO8apRV7A"
+        "elm_AU_QMIUtQLq-LXfLQ5w3og"
       ],
       "type": "vertical_flex",
       "element": {
@@ -6079,8 +5802,8 @@
         }
       }
     },
-    "elm_Cxr_labcQ0mKCgmQLv3Itw": {
-      "elementId": "elm_Cxr_labcQ0mKCgmQLv3Itw",
+    "elm_My-BX28ZSJC-QxrWEl4S0A": {
+      "elementId": "elm_My-BX28ZSJC-QxrWEl4S0A",
       "type": "heading",
       "element": {
         "layout": {
@@ -6287,19 +6010,19 @@
         "content": "                  License &amp; Certifications"
       }
     },
-    "elm_jUjRK98uRbyi5N8ZBFAT7A": {
-      "elementId": "elm_jUjRK98uRbyi5N8ZBFAT7A",
+    "elm_12CLu4B6THmoAyKaeB1X1w": {
+      "elementId": "elm_12CLu4B6THmoAyKaeB1X1w",
       "elements": [
-        "elm_0o055cmSRGu7DeIWqs3iGg",
-        "elm_b1HxtdehSQqTXWOBlpUwWA",
-        "elm_Y9yK8RrKR_CGIDC6_quKRA"
+        "elm_-M_pzIvEThG6Yp6hlb5eXA",
+        "elm_-gIo3zIzSLO0jI_ODN68kw",
+        "elm_ighP-PCBRHuPZjYuyiRoRQ"
       ],
       "type": "vertical_flex",
       "element": {
         "layout": {
           "width": {
             "unit": "px",
-            "value": "300"
+            "value": "330"
           },
           "constraints": {
             "top": {
@@ -6485,12 +6208,12 @@
         }
       }
     },
-    "elm_yCHsQeiDSkiO_zO8apRV7A": {
-      "elementId": "elm_yCHsQeiDSkiO_zO8apRV7A",
+    "elm_AU_QMIUtQLq-LXfLQ5w3og": {
+      "elementId": "elm_AU_QMIUtQLq-LXfLQ5w3og",
       "elements": [
-        "elm_PbKMeR_FSgCQmVxpncaN3w",
-        "elm_LKoOvVPbQ3en2-XP5l-obQ",
-        "elm_qQt2C3cySVuP05AMGx4sJA"
+        "elm_fhchy1BTRgSpheDBfB8WYA",
+        "elm_sMK9AomZSu6_usVueZDlXg",
+        "elm_NgRAm9y5QXGT2LvVIQVNyA"
       ],
       "type": "horizontal_flex",
       "element": {
@@ -6696,165 +6419,8 @@
         }
       }
     },
-    "elm_kVyZ5TDARkibxjqEEr_v9Q": {
-      "elementId": "elm_kVyZ5TDARkibxjqEEr_v9Q",
-      "type": "heading",
-      "element": {
-        "layout": {
-          "width": {
-            "unit": "auto",
-            "value": ""
-          },
-          "constraints": {
-            "top": {
-              "is_enabled": false,
-              "unit": "px",
-              "value": ""
-            },
-            "left": {
-              "is_enabled": false,
-              "unit": "px",
-              "value": ""
-            },
-            "bottom": {
-              "is_enabled": false,
-              "unit": "px",
-              "value": ""
-            },
-            "right": {
-              "is_enabled": false,
-              "unit": "px",
-              "value": ""
-            },
-            "position": ""
-          },
-          "height": {
-            "unit": "auto",
-            "value": ""
-          }
-        },
-        "data": {
-          "component_id": 14000000005061,
-          "text": "${{ item }}",
-          "placeholder": "${{ item }}",
-          "element_name": "heading_3"
-        },
-        "style": {
-          "corner_radius": {
-            "preset": "",
-            "value": ""
-          },
-          "border": {
-            "color": "",
-            "thickness": "1"
-          },
-          "padding": {
-            "unit": "px",
-            "is_even": true,
-            "value": ""
-          },
-          "hover": {
-            "border": {
-              "thickness": ""
-            },
-            "padding": {
-              "top": {
-                "unit": "",
-                "value": ""
-              },
-              "left": {
-                "unit": "",
-                "value": ""
-              },
-              "bottom": {
-                "unit": "",
-                "value": ""
-              },
-              "is_even": "",
-              "right": {
-                "unit": "",
-                "value": ""
-              }
-            },
-            "shadow": {
-              "preset": ""
-            },
-            "background": {
-              "image": {
-                "builder_src": ""
-              }
-            },
-            "font": {
-              "color": "#8C74CA"
-            }
-          },
-          "shadow": {
-            "color": "",
-            "blur": "",
-            "scale": "",
-            "preset": "",
-            "y_offset": "",
-            "x_offset": ""
-          },
-          "background": {
-            "image": {
-              "builder_src": ""
-            },
-            "color": ""
-          },
-          "active": {
-            "border": {
-              "thickness": ""
-            },
-            "padding": {
-              "top": {
-                "unit": "",
-                "value": ""
-              },
-              "left": {
-                "unit": "",
-                "value": ""
-              },
-              "bottom": {
-                "unit": "",
-                "value": ""
-              },
-              "is_even": "",
-              "right": {
-                "unit": "",
-                "value": ""
-              }
-            },
-            "shadow": {
-              "preset": ""
-            },
-            "background": {
-              "image": {
-                "builder_src": ""
-              }
-            },
-            "font": {
-              "color": "#8C74CA"
-            }
-          },
-          "align": {
-            "horizontal": "left"
-          },
-          "opacity": "100",
-          "font": {
-            "color": "#7A8398",
-            "size": {
-              "value": "16"
-            },
-            "weight": "400",
-            "family": "'Roboto',sans-serif"
-          }
-        },
-        "content": "Sign up"
-      }
-    },
-    "elm_b1HxtdehSQqTXWOBlpUwWA": {
-      "elementId": "elm_b1HxtdehSQqTXWOBlpUwWA",
+    "elm_-gIo3zIzSLO0jI_ODN68kw": {
+      "elementId": "elm_-gIo3zIzSLO0jI_ODN68kw",
       "type": "heading",
       "element": {
         "layout": {
@@ -7052,10 +6618,10 @@
         "content": "\n Partner with a dedicated vendor to unlock exclusive benefits and enhance your franchise experience"
       }
     },
-    "elm_C_JQbhCkTZ-Vv2Jnrh4ceQ": {
-      "elementId": "elm_C_JQbhCkTZ-Vv2Jnrh4ceQ",
+    "elm_pULdh6mpRbC8oxjmX9afOA": {
+      "elementId": "elm_pULdh6mpRbC8oxjmX9afOA",
       "elements": [
-        "elm_eExARwXzR1qKg4qUBmWVjQ"
+        "elm_0JhwYMwFSCiUO-T34HwJDA"
       ],
       "type": "horizontal_flex",
       "element": {
@@ -7264,11 +6830,11 @@
         }
       }
     },
-    "elm_qQt2C3cySVuP05AMGx4sJA": {
-      "elementId": "elm_qQt2C3cySVuP05AMGx4sJA",
+    "elm_NgRAm9y5QXGT2LvVIQVNyA": {
+      "elementId": "elm_NgRAm9y5QXGT2LvVIQVNyA",
       "elements": [
-        "elm_OJe3jwrYSwyQQe8k1MuF-g",
-        "elm_KpqELk5gQAmFxCmmCJcVVQ"
+        "elm_bUOpkP_vSJ25hCNuXlmAmQ",
+        "elm_scCFK4M0TIKB6E-Gotpibg"
       ],
       "type": "menu",
       "element": {
@@ -7308,10 +6874,10 @@
           "reordered_list": [],
           "mapped_component": "portalpages",
           "excluded_list": [
-            "14000000005079",
-            "14000000005049",
-            "14000000005067",
-            "14000000005073"
+            "135094000000046033",
+            "135094000000046045",
+            "135094000000046039",
+            "135094000000046015"
           ],
           "element_name": "menu_2"
         },
@@ -7423,12 +6989,12 @@
         }
       }
     },
-    "elm_on_FoseXQQ2o5lhpUzwoMg": {
-      "elementId": "elm_on_FoseXQQ2o5lhpUzwoMg",
+    "elm_82uCc8oXS6O7f4jWtuKbWQ": {
+      "elementId": "elm_82uCc8oXS6O7f4jWtuKbWQ",
       "elements": [
-        "elm__CZ5dAugSl6Gh0Iqb0lJ9A",
-        "elm_2FDvmv6sTR-yat2NWHeKJw",
-        "elm_6vXGSRigQXCdKnEPPxnzzg"
+        "elm_YM7AbFz2Rie32AI0R-Om_w",
+        "elm_6xtoHVgMRoGV9kBtuv8lUw",
+        "elm_5b1j_v0KSRWLBUyzrRyrcQ"
       ],
       "type": "xycoordinates",
       "element": {
@@ -7593,11 +7159,9 @@
         }
       }
     },
-    "elm_J65wQsGnSLmGebjFchOJjA": {
-      "elementId": "elm_J65wQsGnSLmGebjFchOJjA",
-      "elements": [
-        "elm_bSJ3DISpSBuvw1fGi-o8Bg"
-      ],
+    "elm_5guCRhiTSQOJsG8O4HPrXQ": {
+      "elementId": "elm_5guCRhiTSQOJsG8O4HPrXQ",
+      "elements": [],
       "type": "menu_item",
       "element": {
         "layout": {
@@ -7633,8 +7197,9 @@
           }
         },
         "data": {
-          "component_id": 14000000005049,
+          "component_id": 135094000000046020,
           "link_url": "/",
+          "display_name": "Home",
           "element_name": "menu_item_2"
         },
         "style": {
@@ -7685,6 +7250,9 @@
             },
             "flex": {
               "direction": ""
+            },
+            "font": {
+              "color": "#fff"
             }
           },
           "is_active": true,
@@ -7742,155 +7310,10 @@
             },
             "flex": {
               "direction": ""
-            }
-          },
-          "opacity": "100"
-        }
-      }
-    },
-    "elm_J2d17SK_Q8ixU11KzD-AjQ": {
-      "elementId": "elm_J2d17SK_Q8ixU11KzD-AjQ",
-      "type": "heading",
-      "element": {
-        "layout": {
-          "width": {
-            "unit": "auto",
-            "value": ""
-          },
-          "constraints": {
-            "top": {
-              "is_enabled": false,
-              "unit": "px",
-              "value": ""
-            },
-            "left": {
-              "is_enabled": false,
-              "unit": "px",
-              "value": ""
-            },
-            "bottom": {
-              "is_enabled": false,
-              "unit": "px",
-              "value": ""
-            },
-            "right": {
-              "is_enabled": false,
-              "unit": "px",
-              "value": ""
-            },
-            "position": ""
-          },
-          "height": {
-            "unit": "auto",
-            "value": ""
-          }
-        },
-        "data": {
-          "component_id": 14000000005073,
-          "text": "${{ item }}",
-          "placeholder": "${{ item }}",
-          "element_name": "heading_3"
-        },
-        "style": {
-          "corner_radius": {
-            "preset": "",
-            "value": ""
-          },
-          "border": {
-            "color": "",
-            "thickness": "1"
-          },
-          "padding": {
-            "unit": "px",
-            "is_even": true,
-            "value": ""
-          },
-          "hover": {
-            "border": {
-              "thickness": ""
-            },
-            "padding": {
-              "top": {
-                "unit": "",
-                "value": ""
-              },
-              "left": {
-                "unit": "",
-                "value": ""
-              },
-              "bottom": {
-                "unit": "",
-                "value": ""
-              },
-              "is_even": "",
-              "right": {
-                "unit": "",
-                "value": ""
-              }
-            },
-            "shadow": {
-              "preset": ""
-            },
-            "background": {
-              "image": {
-                "builder_src": ""
-              }
             },
             "font": {
               "color": "#fff"
             }
-          },
-          "shadow": {
-            "color": "",
-            "blur": "",
-            "scale": "",
-            "preset": "",
-            "y_offset": "",
-            "x_offset": ""
-          },
-          "background": {
-            "image": {
-              "builder_src": ""
-            },
-            "color": ""
-          },
-          "active": {
-            "border": {
-              "thickness": ""
-            },
-            "padding": {
-              "top": {
-                "unit": "",
-                "value": ""
-              },
-              "left": {
-                "unit": "",
-                "value": ""
-              },
-              "bottom": {
-                "unit": "",
-                "value": ""
-              },
-              "is_even": "",
-              "right": {
-                "unit": "",
-                "value": ""
-              }
-            },
-            "shadow": {
-              "preset": ""
-            },
-            "background": {
-              "image": {
-                "builder_src": ""
-              }
-            },
-            "font": {
-              "color": "#fff"
-            }
-          },
-          "align": {
-            "horizontal": "left"
           },
           "opacity": "100",
           "font": {
@@ -7901,12 +7324,11 @@
             "weight": "300",
             "family": "'Roboto',sans-serif"
           }
-        },
-        "content": "About Us"
+        }
       }
     },
-    "elm_lj6ogadjSHasxycSID9iEA": {
-      "elementId": "elm_lj6ogadjSHasxycSID9iEA",
+    "elm_D8TAMvWvQDuSwT6pcirppg": {
+      "elementId": "elm_D8TAMvWvQDuSwT6pcirppg",
       "type": "heading",
       "element": {
         "layout": {
@@ -8107,6 +7529,6 @@
   },
   "type": "page",
   "sections": [
-    "elm_0SOMUCt-QQqIM2sh0QWmUQ"
+    "elm_yHLHdE_dRzyysI_hldFfug"
   ]
 }
